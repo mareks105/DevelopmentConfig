@@ -7,6 +7,7 @@ Repository for my git configuration files to simplify setup on a new desktop
 See https://www.git-tower.com/blog/diff-tools-windows/
 Meld seems like a good enough option and is open source.
 Install:
+
 Windows: https://meldmerge.org/
 Linux: sudo apt-get install meld
 
