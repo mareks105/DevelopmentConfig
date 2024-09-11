@@ -1,0 +1,9 @@
+[alias]
+	st = status
+	last = log -1 HEAD
+	cm = commit -m
+[user]
+	name = Marcus Ekström
+	email = marcus.ekstrom@hiq.se
+[core]
+	editor = notepad++
