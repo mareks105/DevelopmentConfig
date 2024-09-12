@@ -1,9 +1,25 @@
 [alias]
+# Shortcuts
 	st = status
+	co = checkout
 	last = log -1 HEAD
 	cm = commit -m
+	co-recurse = !sh -c 'git checkout $1 && git submodule update --recursive' -
+	diffv = difftool -y
+	
+# Extra commands
+	search = !git rev-list --all | xargs git grep -F
+	abbr = "!sh -c 'git rev-list --all | grep ^$1 | while read commit; do git --no-pager log -n1 --pretty=format:\"%Cred%H%Creset %Cgreen%cD%Creset %C(bold blue)%an%Creset %s%n\" $commit; done' -"
+	
+# pretty logs
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ll = log --oneline
 [user]
 	name = Marcus Ekström
 	email = marcus.ekstrom@hiq.se
 [core]
 	editor = notepad++
+[merge]
+	tool = meld
+[diff]
+	tool = meld

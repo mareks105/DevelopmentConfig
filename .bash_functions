@@ -1,3 +1,4 @@
+## navigate to folder and list it contents
 function cl() {
     DIR="$*";
 	# if no DIR given, go home
