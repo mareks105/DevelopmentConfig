@@ -18,7 +18,7 @@
 	name = Marcus Ekström
 	email = marcus.ekstrom@hiq.se
 [core]
-	editor = notepad++
+	editor = 'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
 [merge]
 	tool = meld
 [diff]
